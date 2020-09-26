@@ -2647,7 +2647,7 @@ description = "TensorFlow is an open source machine learning framework for every
 name = "tensorflow"
 optional = false
 python-versions = "*"
-version = "2.3.0"
+version = "2.3.1"
 
 [package.dependencies]
 absl-py = ">=0.7.0"
@@ -2660,7 +2660,6 @@ keras-preprocessing = ">=1.1.1,<1.2"
 numpy = ">=1.16.0,<1.19.0"
 opt-einsum = ">=2.3.2"
 protobuf = ">=3.9.2"
-scipy = "1.4.1"
 six = ">=1.12.0"
 tensorboard = ">=2.3.0,<3"
 tensorflow-estimator = ">=2.3.0,<2.4.0"
@@ -3095,7 +3094,6 @@ version = ">=3.7.4"
 [[package]]
 category = "main"
 description = "Backport of pathlib-compatible object wrapper for zip files"
-marker = "sys_platform != \"win32\" and python_version < \"3.8\" or python_version < \"3.8\" or python_version < \"3.7\" and python_version != \"3.4\""
 name = "zipp"
 optional = false
 python-versions = ">=3.6"
@@ -3114,6 +3112,7 @@ transformers = ["transformers"]
 
 [metadata]
 content-hash = "2040a142227e55989b2b715620530fad8c600956ac0bd4e260b97eaa85ab53ec"
+lock-version = "1.0"
 python-versions = ">=3.6,<3.9"
 
 [metadata.files]
@@ -3731,16 +3730,19 @@ kiwisolver = [
     {file = "kiwisolver-1.2.0-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:443c2320520eda0a5b930b2725b26f6175ca4453c61f739fef7a5847bd262f74"},
     {file = "kiwisolver-1.2.0-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:efcf3397ae1e3c3a4a0a0636542bcad5adad3b1dd3e8e629d0b6e201347176c8"},
     {file = "kiwisolver-1.2.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:fccefc0d36a38c57b7bd233a9b485e2f1eb71903ca7ad7adacad6c28a56d62d2"},
+    {file = "kiwisolver-1.2.0-cp36-cp36m-manylinux2014_aarch64.whl", hash = "sha256:be046da49fbc3aa9491cc7296db7e8d27bcf0c3d5d1a40259c10471b014e4e0c"},
     {file = "kiwisolver-1.2.0-cp36-none-win32.whl", hash = "sha256:60a78858580761fe611d22127868f3dc9f98871e6fdf0a15cc4203ed9ba6179b"},
     {file = "kiwisolver-1.2.0-cp36-none-win_amd64.whl", hash = "sha256:556da0a5f60f6486ec4969abbc1dd83cf9b5c2deadc8288508e55c0f5f87d29c"},
     {file = "kiwisolver-1.2.0-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:7cc095a4661bdd8a5742aaf7c10ea9fac142d76ff1770a0f84394038126d8fc7"},
     {file = "kiwisolver-1.2.0-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:c955791d80e464da3b471ab41eb65cf5a40c15ce9b001fdc5bbc241170de58ec"},
     {file = "kiwisolver-1.2.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:603162139684ee56bcd57acc74035fceed7dd8d732f38c0959c8bd157f913fec"},
+    {file = "kiwisolver-1.2.0-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:63f55f490b958b6299e4e5bdac66ac988c3d11b7fafa522800359075d4fa56d1"},
     {file = "kiwisolver-1.2.0-cp37-none-win32.whl", hash = "sha256:03662cbd3e6729f341a97dd2690b271e51a67a68322affab12a5b011344b973c"},
     {file = "kiwisolver-1.2.0-cp37-none-win_amd64.whl", hash = "sha256:4eadb361baf3069f278b055e3bb53fa189cea2fd02cb2c353b7a99ebb4477ef1"},
     {file = "kiwisolver-1.2.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:c31bc3c8e903d60a1ea31a754c72559398d91b5929fcb329b1c3a3d3f6e72113"},
     {file = "kiwisolver-1.2.0-cp38-cp38-manylinux1_i686.whl", hash = "sha256:d52b989dc23cdaa92582ceb4af8d5bcc94d74b2c3e64cd6785558ec6a879793e"},
     {file = "kiwisolver-1.2.0-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:e586b28354d7b6584d8973656a7954b1c69c93f708c0c07b77884f91640b7657"},
+    {file = "kiwisolver-1.2.0-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:38d05c9ecb24eee1246391820ed7137ac42a50209c203c908154782fced90e44"},
     {file = "kiwisolver-1.2.0-cp38-none-win32.whl", hash = "sha256:d069ef4b20b1e6b19f790d00097a5d5d2c50871b66d10075dab78938dc2ee2cf"},
     {file = "kiwisolver-1.2.0-cp38-none-win_amd64.whl", hash = "sha256:18d749f3e56c0480dccd1714230da0f328e6e4accf188dd4e6884bdd06bf02dd"},
     {file = "kiwisolver-1.2.0.tar.gz", hash = "sha256:247800260cd38160c362d211dcaf4ed0f7816afb5efe56544748b21d6ad6d17f"},
@@ -4379,7 +4381,7 @@ rocketchat-api = [
     {file = "rocketchat_API-1.4-py3-none-any.whl", hash = "sha256:8a5826a972547a6ffb09db171e1ad9990eebf32ed396a3e1bec1f13c18577311"},
 ]
 rsa = [
-    {file = "rsa-4.6-py2.py3-none-any.whl", hash = "sha256:23778f5523461cf86ae075f9482a99317f362bca752ae57cb118044066f4026f"},
+    {file = "rsa-4.6-py3-none-any.whl", hash = "sha256:6166864e23d6b5195a5cfed6cd9fed0fe774e226d8f854fcb23b7bbef0350233"},
     {file = "rsa-4.6.tar.gz", hash = "sha256:109ea5a66744dd859bf16fe904b8d8b627adafb9408753161e766a92e7d681fa"},
 ]
 "ruamel.yaml" = [
@@ -4549,21 +4551,25 @@ sqlalchemy = [
     {file = "SQLAlchemy-1.3.19-cp35-cp35m-macosx_10_14_x86_64.whl", hash = "sha256:6547b27698b5b3bbfc5210233bd9523de849b2bb8a0329cd754c9308fc8a05ce"},
     {file = "SQLAlchemy-1.3.19-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:107d4af989831d7b091e382d192955679ec07a9209996bf8090f1f539ffc5804"},
     {file = "SQLAlchemy-1.3.19-cp35-cp35m-manylinux2010_x86_64.whl", hash = "sha256:eb1d71643e4154398b02e88a42fc8b29db8c44ce4134cf0f4474bfc5cb5d4dac"},
+    {file = "SQLAlchemy-1.3.19-cp35-cp35m-manylinux2014_aarch64.whl", hash = "sha256:b6ff91356354b7ff3bd208adcf875056d3d886ed7cef90c571aef2ab8a554b12"},
     {file = "SQLAlchemy-1.3.19-cp35-cp35m-win32.whl", hash = "sha256:96f51489ac187f4bab588cf51f9ff2d40b6d170ac9a4270ffaed535c8404256b"},
     {file = "SQLAlchemy-1.3.19-cp35-cp35m-win_amd64.whl", hash = "sha256:618db68745682f64cedc96ca93707805d1f3a031747b5a0d8e150cfd5055ae4d"},
     {file = "SQLAlchemy-1.3.19-cp36-cp36m-macosx_10_14_x86_64.whl", hash = "sha256:6557af9e0d23f46b8cd56f8af08eaac72d2e3c632ac8d5cf4e20215a8dca7cea"},
     {file = "SQLAlchemy-1.3.19-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:8280f9dae4adb5889ce0bb3ec6a541bf05434db5f9ab7673078c00713d148365"},
     {file = "SQLAlchemy-1.3.19-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:b595e71c51657f9ee3235db8b53d0b57c09eee74dfb5b77edff0e46d2218dc02"},
+    {file = "SQLAlchemy-1.3.19-cp36-cp36m-manylinux2014_aarch64.whl", hash = "sha256:51064ee7938526bab92acd049d41a1dc797422256086b39c08bafeffb9d304c6"},
     {file = "SQLAlchemy-1.3.19-cp36-cp36m-win32.whl", hash = "sha256:8afcb6f4064d234a43fea108859942d9795c4060ed0fbd9082b0f280181a15c1"},
     {file = "SQLAlchemy-1.3.19-cp36-cp36m-win_amd64.whl", hash = "sha256:e49947d583fe4d29af528677e4f0aa21f5e535ca2ae69c48270ebebd0d8843c0"},
     {file = "SQLAlchemy-1.3.19-cp37-cp37m-macosx_10_14_x86_64.whl", hash = "sha256:9e865835e36dfbb1873b65e722ea627c096c11b05f796831e3a9b542926e979e"},
     {file = "SQLAlchemy-1.3.19-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:276936d41111a501cf4a1a0543e25449108d87e9f8c94714f7660eaea89ae5fe"},
     {file = "SQLAlchemy-1.3.19-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:c7adb1f69a80573698c2def5ead584138ca00fff4ad9785a4b0b2bf927ba308d"},
+    {file = "SQLAlchemy-1.3.19-cp37-cp37m-manylinux2014_aarch64.whl", hash = "sha256:465c999ef30b1c7525f81330184121521418a67189053bcf585824d833c05b66"},
     {file = "SQLAlchemy-1.3.19-cp37-cp37m-win32.whl", hash = "sha256:aa0554495fe06172b550098909be8db79b5accdf6ffb59611900bea345df5eba"},
     {file = "SQLAlchemy-1.3.19-cp37-cp37m-win_amd64.whl", hash = "sha256:15c0bcd3c14f4086701c33a9e87e2c7ceb3bcb4a246cd88ec54a49cf2a5bd1a6"},
     {file = "SQLAlchemy-1.3.19-cp38-cp38-macosx_10_14_x86_64.whl", hash = "sha256:fe7fe11019fc3e6600819775a7d55abc5446dda07e9795f5954fdbf8a49e1c37"},
     {file = "SQLAlchemy-1.3.19-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:c898b3ebcc9eae7b36bd0b4bbbafce2d8076680f6868bcbacee2d39a7a9726a7"},
     {file = "SQLAlchemy-1.3.19-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:072766c3bd09294d716b2d114d46ffc5ccf8ea0b714a4e1c48253014b771c6bb"},
+    {file = "SQLAlchemy-1.3.19-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:26c5ca9d09f0e21b8671a32f7d83caad5be1f6ff45eef5ec2f6fd0db85fc5dc0"},
     {file = "SQLAlchemy-1.3.19-cp38-cp38-win32.whl", hash = "sha256:b70bad2f1a5bd3460746c3fb3ab69e4e0eb5f59d977a23f9b66e5bdc74d97b86"},
     {file = "SQLAlchemy-1.3.19-cp38-cp38-win_amd64.whl", hash = "sha256:83469ad15262402b0e0974e612546bc0b05f379b5aa9072ebf66d0f8fef16bea"},
     {file = "SQLAlchemy-1.3.19.tar.gz", hash = "sha256:3bba2e9fbedb0511769780fe1d63007081008c5c2d7d715e91858c94dbaa260e"},
@@ -4597,18 +4603,18 @@ tensorboard-plugin-wit = [
     {file = "tensorboard_plugin_wit-1.7.0-py3-none-any.whl", hash = "sha256:ee775f04821185c90d9a0e9c56970ee43d7c41403beb6629385b39517129685b"},
 ]
 tensorflow = [
-    {file = "tensorflow-2.3.0-cp35-cp35m-macosx_10_11_x86_64.whl", hash = "sha256:c6fad4e944e20199e963e158fe626352e349865ea4ca71655f5456193a6d3b9d"},
-    {file = "tensorflow-2.3.0-cp35-cp35m-manylinux2010_x86_64.whl", hash = "sha256:6f74ef59dc59cf8f2002738c65dffa591e2c332e9b1b4ced33ff8d39b6fb477c"},
-    {file = "tensorflow-2.3.0-cp35-cp35m-win_amd64.whl", hash = "sha256:797d6ca09d4f69570458180b7813dc12efe9166ba60454b0df7bed531bb5e4f4"},
-    {file = "tensorflow-2.3.0-cp36-cp36m-macosx_10_11_x86_64.whl", hash = "sha256:b1699903cf3a9f41c379d79ada2279a206a071b7e05671646d7b5e7fc37e2eae"},
-    {file = "tensorflow-2.3.0-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:5c9f9a36d5b4d0ceb67b985486fe4cc6999a96e2bf89f3ba82ffd8317e5efadd"},
-    {file = "tensorflow-2.3.0-cp36-cp36m-win_amd64.whl", hash = "sha256:bc9d761a857839344930eef86f0d6409840b1c9ada9cbe56b92287b2077ef752"},
-    {file = "tensorflow-2.3.0-cp37-cp37m-macosx_10_11_x86_64.whl", hash = "sha256:0cfb0fbe875408cdbfc7677f12aa0b23656f3e6d8c5f568b3100450ec29262a7"},
-    {file = "tensorflow-2.3.0-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:92430b6e91f00f38a602c4f547bbbaca598a3a90376f90d5b2acd24bc18fa1d7"},
-    {file = "tensorflow-2.3.0-cp37-cp37m-win_amd64.whl", hash = "sha256:36a4ce9bbc9865385c1bb606fe34f0da96b0496ce3997e652d2b765a4382fe48"},
-    {file = "tensorflow-2.3.0-cp38-cp38-macosx_10_11_x86_64.whl", hash = "sha256:44c8d979b2d19ed56dbe6b03aef87616d6138a58fd80c43e7a758c90105e9adf"},
-    {file = "tensorflow-2.3.0-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:c33a423eb1f39c4c6acc44c044a138979868f0d4c91e380c191bd8fddc7c2e9b"},
-    {file = "tensorflow-2.3.0-cp38-cp38-win_amd64.whl", hash = "sha256:2d9994157d6a222d9ffd956e99af4b5e46e47338428d2d197e325362283ec835"},
+    {file = "tensorflow-2.3.1-cp35-cp35m-macosx_10_6_intel.whl", hash = "sha256:8490c06c72d6b2227f0bda4800bfbe9004ade3f25f5ccaac2581531bf2885ab5"},
+    {file = "tensorflow-2.3.1-cp35-cp35m-manylinux2010_x86_64.whl", hash = "sha256:85c49c951d735c651ae989a6dd7a40ab8032317179d634f871e2e7556dc82a69"},
+    {file = "tensorflow-2.3.1-cp35-cp35m-win_amd64.whl", hash = "sha256:94c7d1916844fd7db53dd8d9b2c88b48119d39992ae542ec8a076d6f806cc989"},
+    {file = "tensorflow-2.3.1-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:68afc5f01f32827a53c23a9aa8cd404cdcf308e90942d4a8023e7f9e669a330a"},
+    {file = "tensorflow-2.3.1-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:f4aa1dd6e7a040c29b3567ad1f4537aebeb58fcb6bafbc11f11c2c461d6fda63"},
+    {file = "tensorflow-2.3.1-cp36-cp36m-win_amd64.whl", hash = "sha256:4632c2c6c84ed3b5e29e4b292704a1a646e1aa06587b7a2404b6ecc99e07758a"},
+    {file = "tensorflow-2.3.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:1f72edee9d2e8861edbb9e082608fd21de7113580b3fdaa4e194b472c2e196d0"},
+    {file = "tensorflow-2.3.1-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:859afb9166ace41ee71f62938fc645981113bb3227b847c8cd2875549c9fa1dc"},
+    {file = "tensorflow-2.3.1-cp37-cp37m-win_amd64.whl", hash = "sha256:b69a6f0a8e7158c3bc14b22ec0d03bd303e196644d5428094bacea0ed8507af7"},
+    {file = "tensorflow-2.3.1-cp38-cp38-macosx_10_14_x86_64.whl", hash = "sha256:cdce1f71f592d840dd3e05b67f1010f616311d9856250ff772db537f39ef2992"},
+    {file = "tensorflow-2.3.1-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:87750a476aa6f76b3aad5e6182faf2a3036a3d4c0db3b6d7463ebbaf4b184a23"},
+    {file = "tensorflow-2.3.1-cp38-cp38-win_amd64.whl", hash = "sha256:87b62ab25816597a5e5352604b383b292eafd19a33ae7848b5275ea74fc4da1d"},
 ]
 tensorflow-addons = [
     {file = "tensorflow_addons-0.11.2-cp35-cp35m-macosx_10_13_x86_64.whl", hash = "sha256:c3dcf5fd56aeacf13fd41b198eb6c11567b9cf86f516673b9766a1f97061bde2"},
